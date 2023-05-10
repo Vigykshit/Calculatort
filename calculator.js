@@ -1,26 +1,19 @@
-let screen= document.getElementById('first');
-buttons = document.querySelectorAll('button');
-let screenValue = "";
- for(item of buttons){
-    item.addEventListener('click',(e)=>{
-        buttontext= e.target.innerText;
-        console.log('buttonText');
-        if(buttonText== X){
-            screenValue += "*";
-            screen.value=screenValue;
-        }
-        
-        else if (buttonText =='C'){
-            screenValue += "";
-            
-        } 
-        else if (buttonText =='='){
-            screenValue += eval(screenValue); 
-        }
-        else{
-            screenValue += buttontext;
-            screen.value=screenValue;
-        }
-      })
-    }
+function opt(same){
+
+    let a = document.getElementById('first')
  
+     if(same == "AC"){
+        a.value =""
+     }
+     else if (same == "DEL"){
+        a.value = ""
+     }
+     else if (same == "="){
+         let out = eval(a.value)
+         a.value = `${out}`
+     }
+     else {
+         a.value += `${same}`
+     }
+ }
+  

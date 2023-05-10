@@ -10,34 +10,37 @@
             <h1 class="name">KATOCH CALCULATOR</h1>
         </div>
         <div class="container1">
-            <input type="text" name="screen" id="first">
+            <div>
+            <input type="text" id="first" placeholder="0">
+        </div>
                   <table>
                     <tr>
-                        <td class="bigtd"><button>AC</button></td>
-                        <td class="bigtd"><button>9</button></td>
-                        <td class="bigtd"><button>8</button></td>
-                        <td class="bigtd"><button>7</button></td>
+                        <td class="bigtd"><button onclick="opt('DEL')">DEL</button></td>
+                        <td class="bigtd"><button onclick="opt(9)">9</button></td>
+                        <td class="bigtd"><button onclick="opt(8)">8</button></td>
+                        <td class="bigtd"><button onclick="opt(7)">7</button></td>
                     </tr>
                     <tr>
-                        <td class="bigtd"><button>C</button></td>
-                        <td class="bigtd"><button>6</button></td>
-                        <td class="bigtd"><button>5</button></td>
-                        <td class="bigtd"><button>4</button></td>
+                        <td class="bigtd"><button onclick="opt('.')">.</button></td>
+                        <td class="bigtd"><button onclick="opt(6)">6</button></td>
+                        <td class="bigtd"><button onclick="opt(5)">5</button></td>
+                        <td class="bigtd"><button onclick="opt(4)">4</button></td>
                     </tr>
                     <tr>
-                        <td class="bigtd"><button>+</button></td>
-                        <td class="bigtd"><button>3</button></td>
-                        <td class="bigtd"><button>2</button></td>
-                        <td class="bigtd"><button>1</button></td>
+                        <td class="bigtd"><button onclick="opt('+')">+</button></td>
+                        <td class="bigtd"><button onclick="opt(3)">3</button></td>
+                        <td class="bigtd"><button onclick="opt(2)">2</button></td>
+                        <td class="bigtd"><button onclick="opt(1)">1</button></td>
                     </tr>
                     <tr>
-                        <td class="bigtd"><button>-</button></td>
-                        <td class="bigtd"><button>*</button></td>
-                        <td class="bigtd"><button>/</button></td>
-                        <td class="bigtd"><button>0</button></td>
+                        <td class="bigtd"><button onclick="opt('-')">-</button></td>
+                        <td class="bigtd"><button onclick="opt('*')">*</button></td>
+                        <td class="bigtd"><button onclick="opt('/')">/</button></td>
+                        <td class="bigtd"><button onclick="opt(0)">0</button></td>
                     </tr>
                     <tr>
-                        <button class="equal">=</button>  
+                        <button class="equal" onclick="opt('=')">=</button>
+                        <button class="equal1" onclick="opt('AC')">AC</button>  
                     </tr>
                     </table>
                 </div>
